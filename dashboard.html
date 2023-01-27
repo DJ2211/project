@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+</head>
+<body>
+
+    <!-- heading  -->
+
+    <div class="dashboard-header">
+        <div class="sidebar-header-logo">
+            <a href="__blanc" class="sidebar-logo"><img src="images\images\menu-bar.svg" alt="sidebar logo"></a>
+            <a href="__blanc" class="company-logo"><img src="images\images\header-logo.svg" alt="company logo"></a>
+        </div>
+        <div class="form-notification">
+            <form id="form" action="search">
+                <button class="search-icon"><img src="images\images\search-icon.svg" alt="search"></button>
+                <input  class="search-input" type="search" id="query" placeholder="Search">
+            </form>
+            <button class="notification-icon"><img src="images\images\notification-icon.svg" alt="notification-icon"></button>
+        </div>
+        <div class="profile">
+            <button class="button-profile-pic"><img class="profile-picture" src="images\images\profile.png" alt="profile picture"></button>
+            <p class="profile-name">John Doe</p>
+            <button  class="more-details">
+                <img  class="more-detail-svg" src="images\images\select-downward.svg" alt="">
+            </button>
+        </div>
+        
+    </div>
+
+    <div class="d-flex flex-row main-page-flex">
+    <!-- sidebar -->
+       
+        <aside class="sidebar-main">
+            <ul>
+                <li class="sidebar-common d-flex flex-row active "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\dashboard-active.svg" alt="dashboard">Dashboard</a></li>                    <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\inbox-default.svg" alt="Indox"></a>Indox</li>
+                <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\clock-default.svg" alt="History"></a>History</li>
+                <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\user-default.svg" alt="Users"></a>Users</li>
+                <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\inbox-default.svg" alt="Analysis"></a>Analysis</li>
+                <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\maintenance-default.svg" alt="Maintenance"></a>Maintenance</li>
+                <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\setting-default.svg" alt="Setting"></a>Setting</li>
+            </ul>
+        </aside>
+
+    <!-- main content of dashboard -->
+
+        <main class="main-content">
+                <div>
+                    <p class="main-heading-paragraph">Dashboard</p>
+                </div>
+
+                <div class="grid-element">
+
+                    <div class="flex-grid-element">
+                        <div>
+                            <img class="dashboard-icons" src="images\images\star.svg" alt="star">
+                        </div>
+                        <div class="title-numbers">
+                            <h6 class="numbers-p">23,456</h6>
+                            <h6 class="title-p"> New Products</h6>
+                        </div>
+                    </div>
+                    
+                    <!-- second element -->
+
+                    <div class="flex-grid-element">
+                        <div>
+                            <img class="dashboard-icons" src="images\images\new-product.svg" alt="new products">
+                        </div>
+                        <div class="title-numbers">
+                            <h6 class="numbers-p">2345</h6>
+                            <h6 class="title-p">Added Products</h6>
+                        </div>
+                    </div>
+
+                    <!-- third element -->
+                    <div class="flex-grid-element">
+                        <div>
+                            <img class="dashboard-icons" src="images\images\total-product.svg" alt="star">
+                        </div>
+                        <div class="title-numbers">
+                            <h6 class="numbers-p">32,456</h6>
+                            <h6 class="title-p"> Total Products</h6>
+                        </div>
+                    </div>
+
+                    <!-- fourth element -->
+                    <div class="flex-grid-element">
+                        <div>
+                            <img class="dashboard-icons" src="images\images\dollar-filled.svg" alt="star">
+                        </div>
+                        <div class="title-numbers">
+                            <h6 class="numbers-p">5678</h6>
+                            <h6 class="title-p">Today's Sale</h6>
+                        </div>
+                    </div>
+
+                    <!-- fifth element -->
+                    <div class="flex-grid-element">
+                        <div>
+                            <img class="dashboard-icons" src="images\images\money-bag.svg" alt="mooney bag">
+                        </div>
+                        <div class="title-numbers">
+                            <h6 class="numbers-p">33,5342</h6>
+                            <h6 class="title-p"> Total Sale</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- grid layout complete made by jay dholakia -->
+
+                <div class="main-sales">
+                    <!-- this div is for graph part -->
+                    <div class="bg-color">
+                        <div class="graph-div">
+                            <h5 class=" sales-h5">Sale</h5>
+                            <div class=" sales-main-options">
+                                <h6 class="sale-options">Weekly</h6>
+                                <h6 class="sale-options">Monthly</h6>
+                                <h6 class=" sale-options sale-options-active">Yearly</h6>
+                            </div>
+                        </div>
+
+                        <div >
+                            <img class="graph-img" src="images\images\data-graph.png" alt="graph img">
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    <!-- this div is for chart part -->
+                    <div class="pie-chart">
+                        <h5 class="sales-h5">
+                            Sales By Country
+                        </h5>
+                        <img class="img-pie-center" src="images\images\pie-chart.svg" alt="pie chart">
+                        <table>
+                            <tr class="tr-align">
+                                <td class="td-small"><img class="small-radio" src="images\images\radio-checked-icon.svg" alt="icon">United States of America</td>
+                                <td class="td-small"><img class="small-radio clr-2" src="images\images\radio-checked-icon.svg" alt="icon">Canada</td>
+                            </tr>
+                            <tr class="tr-align">
+                                <td class="td-small"><img  class="small-radio clr-3" src="images\images\radio-checked-icon.svg" alt="icon">Russia</td>
+                                <td class="td-small"><img class="small-radio clr-4" src="images\images\radio-checked-icon.svg" alt="icon">India</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </main>
+    </div>
+</body>
+</html>
