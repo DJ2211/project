@@ -13,6 +13,7 @@
     <!-- heading  -->
 
     <div class="dashboard-header">
+
         <div class="sidebar-header-logo">
             <a href="__blanc" class="sidebar-logo"><img src="images\images\menu-bar.svg" alt="sidebar logo"></a>
             <a href="__blanc" class="company-logo"><img src="images\images\header-logo.svg" alt="company logo"></a>
@@ -48,14 +49,20 @@
             </ul>
         </aside>
 
-    <!-- main content of dashboard -->
 
-        <main class="main-content">
+
+    <div class="d-flex flex-column">
+
+        <!-- main content of dashboard -->
+
+            <main class="main-content">
                 <div>
                     <p class="main-heading-paragraph">Dashboard</p>
                 </div>
 
                 <div class="grid-element">
+
+                    <!-- first element -->
 
                     <div class="flex-grid-element">
                         <div>
@@ -137,23 +144,46 @@
 
                     <!-- this div is for chart part -->
                     <div class="pie-chart">
-                        <h5 class="sales-h5">
+                        <h5 class="sales-h5 margin-on-sales">
                             Sales By Country
                         </h5>
-                        <img class="img-pie-center" src="images\images\pie-chart.svg" alt="pie chart">
-                        <table>
-                            <tr class="tr-align">
-                                <td class="td-small"><img class="small-radio" src="images\images\radio-checked-icon.svg" alt="icon">United States of America</td>
-                                <td class="td-small"><img class="small-radio clr-2" src="images\images\radio-checked-icon.svg" alt="icon">Canada</td>
-                            </tr>
-                            <tr class="tr-align">
-                                <td class="td-small"><img  class="small-radio clr-3" src="images\images\radio-checked-icon.svg" alt="icon">Russia</td>
-                                <td class="td-small"><img class="small-radio clr-4" src="images\images\radio-checked-icon.svg" alt="icon">India</td>
-                            </tr>
-                        </table>
+
+                        <div class="pie-details">
+                            <img class="img-pie-center" src="images\images\pie-chart.svg" alt="pie chart">
+                            
+                            <div class="mb-2">
+                                <table>
+                                    <tr class="tr-align">
+                                        <td class="td-main"><div class="small-radio clr-1 d-inline-block"></div><p class="d-inline td-small">United States of America</p></td>
+                                        <td class="td-main"><div class="small-radio clr-2 d-inline-block"></div><p class="d-inline td-small">Canada</p></td>
+                                    </tr>
+                                    <tr class="tr-align">
+                                        <td class="td-main"><div class="small-radio clr-3 d-inline-block"></div><p class="d-inline td-small">Russia</p></td>
+                                        <td class="td-main"><div class="small-radio clr-4 d-inline-block"></div><p class="d-inline td-small">India</p></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                 </div>
-        </main>
+            </main>
+
+
+            <!-- invoice as second flex element -->
+            <div class="main-invoices">
+                <div class="invoice-heading">
+                    <h5 class=" sales-h5 heading-invoice">Invoices</h5>
+                    <h6 class=" sale-options sales-option-color">View All</h6>    
+                </div>            
+            </div>
+     </div>
+
+        
+        
     </div>
+
+    
 </body>
 </html>
