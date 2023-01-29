@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style tag -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+
+    <title>Inner Page</title>
+</head>
+<body>
+
+    <!-- header of innerpage -->
+    <div class="dashboard-header">
+
+        <div class="sidebar-header-logo">
+            <a href="__blanc" class="sidebar-logo"><img src="images\images\menu-bar.svg" alt="sidebar logo"></a>
+            <a href="__blanc" class="company-logo"><img src="images\images\header-logo.svg" alt="company logo"></a>
+        </div>
+        <div class="form-notification">
+            <form id="form" action="search">
+                <button class="search-icon"><img src="images\images\search-icon.svg" alt="search"></button>
+                <input  class="search-input" type="search" id="query" placeholder="Search">
+            </form>
+            <button class="notification-icon"><img src="images\images\notification-icon.svg" alt="notification-icon"></button>
+        </div>
+        <div class="profile">
+            <button class="button-profile-pic"><img class="profile-picture" src="images\images\profile.png" alt="profile picture"></button>
+            <p class="profile-name">John Doe</p>
+            <button  class="more-details">
+                <img  class="more-detail-svg" src="images\images\select-downward.svg" alt="">
+            </button>
+        </div>
+        
+    </div>
+
+
+    <!-- sidebar of innerpage -->
+    <div class="d-flex flex-row main-page-flex">
+        <!-- sidebar -->
+           
+            <aside class="sidebar-main">
+                <ul>
+                    <li class="sidebar-common-inactive  d-flex flex-row "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\dashboard-default.svg" alt="dashboard">Dashboard</a></li>
+                    <li class="sidebar-common d-flex flex-row active"><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\graph-active.svg" alt="Analysis"></a>Analysis</li>
+                    <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\inbox-default.svg" alt="Indox"></a>Indox</li>
+                    <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\clock-default.svg" alt="History"></a>History</li>
+                    <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\user-default.svg" alt="Users"></a>Users</li>
+                    <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\maintenance-default.svg" alt="Maintenance"></a>Maintenance</li>
+                    <li class="sidebar-common-inactive d-flex flex-row  "><a  class="text-decoration-none text-format" href="__blank"><img class="sidebar-icon" src="images\images\setting-default.svg" alt="Setting"></a>Setting</li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <div>
+                    <p class="main-heading-paragraph">Analysis</p>
+                </div>
+                <div class="main-form">
+                    <form action="Submit" method="post">
+                        <h5 class="input-options">One Column</h5>
+                        
+                        <input class="input-size" type="text" placeholder="Name">
+                        <select class="input-size" name="Dropdown">
+                        <option class="text-for-options"><p class="color-of-options">Dropdown</p></option>
+                        </select>
+                        <textarea class="text-area-size"   name="multiple lines" placeholder="Multiple lines"></textarea>
+                        
+                        
+                        <h5 class="input-options">Two Column</h5>
+                        <table>
+                            <tr class="two-column">
+                                <td><input type="text" placeholder="name" class="input-size-2"></td>
+                                <td><input type="text" placeholder="username" class="input-size-2" value="johndoe"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" placeholder="password" class="input-size-2"></td>
+                                <td><select class="input-size-2" name="Dropdown">
+                                    <option class="text-for-options"><p class="color-of-options">Dropdown</p></option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <h5 class="input-options">Three Column</h5>
+                        <table>
+                            <tr class="two-column">
+                                <td><input type="text" placeholder="Focus"   class="input-size-3 focused-input" ></td>
+                                <td><input type="text" placeholder="username" class="input-size-3" value="johndoe"></td>
+                                <td><input type="text" placeholder="disabled" class="input-size-3 disabled-input " disabled value="johndoe"></td>
+                            </tr>
+                        </table>
+
+                        <h5 class="input-options">Four Column</h5>
+                        <table>
+                            <tr class="two-column">
+                                <td><input type="text" placeholder="Designation"   class="input-size-4 " ></td>
+                                <td><input type="text" placeholder="Name" class="input-size-4" ></td>
+                                <td><input type="text" placeholder="Username" class="input-size-4 disabled-input "  value="johndoe"></td>
+                                <td><select class="input-size-4" name="Dropdown">
+                                    <option value="" disabled selected class="text-color">Select your option</option>
+                                    <!-- <option class="text-for-options"><p class="color-of-options">Select</p></option> -->
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h5 class="input-options">Other Design Elements</h5>
+
+                        <h6 class="input-options-2">File Upload</h6>
+                        
+                            <div class="button-text">
+                                <button class="button-form"><img src="images\images\cloud-upload-icon.svg" alt="upload button"> Upload</button>
+                            <p class="p-for-button">No item Selected</p>
+                            </div>
+                        
+                        <h6 class="input-options-2">Radio Button</h6>
+
+                        <input  type="radio" id="option1" name="radio" value="Option 1">
+                        <label class="padding-for-radio" for="html">Option 1</label>
+                        <input type="radio" id="option1" name="radio" value="Option 2">
+                        <label class="padding-for-radio" for="css">Option 2</label>
+
+                        <h6 class="input-options-2">Checkbox</h6>
+
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label class="padding-for-radio" for="vehicle1">Option 1</label>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label class="padding-for-radio" for="vehicle2">Option 2</label>
+
+                        <h6 class="input-options-2">Snackbar</h6>
+                        
+                        <table>
+                            <tr class="two-column">
+                                <td><input  type="text" value="This is an error message!" class="input-size-2"><img  class="snackbar-icon" src="images\images\info-icon.svg" alt=""></td>
+                                <td><input  type="text" value="This is an information message!" class="input-size-2"><img  class="snackbar-icon" src="images\images\info-icon.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><input  type="text" value="This is an warning message!" class="input-size-2"><img  class="snackbar-icon" src="images\images\info-icon.svg" alt=""></td>
+                                <td><input  type="text" value="This is a Sucess message!" class="input-size-2"><img  class="snackbar-icon" src="images\images\info-icon.svg" alt=""></td>
+                            </tr>
+                        </table>
+
+                        <h6 class="input-options-2">Call to action</h6>
+                        <button class="button-primary">Primary</button>
+                        <button class="button-secondary">Secondary</button>
+
+                        <h6 class="input-options-2">Tabs</h6>
+                        <div class="button-border-style">
+                            <button class="tab-styles tab-styles-active">Tab 1</button>                        
+                            <button class="tab-styles ">Tab 2</button>                        
+                            <button class="tab-styles ">Tab 3</button> 
+                        </div>
+                        <p class="button-style">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </main>
+
+    </div>
+
+</body>
+</html>
