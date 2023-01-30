@@ -18,18 +18,25 @@
     <!-- heading  -->
 
     <div class="dashboard-header">
-
+        
+        <!-- company logo and icon -->
         <div class="sidebar-header-logo">
             <a href="__blanc" class="sidebar-logo"><img src="images\images\menu-bar.svg" alt="sidebar logo"></a>
             <a href="__blanc" class="company-logo"><img src="images\images\header-logo.svg" alt="company logo"></a>
         </div>
+        
+        <!-- searchbar and notification icon -->
         <div class="form-notification">
             <form id="form" action="search">
-                <button class="search-icon"><img src="images\images\search-icon.svg" alt="search"></button>
+                <label for="query" class="search-icon"><img src="images\images\search-icon.svg" alt="search">
+                </label>
                 <input  class="search-input" type="search" id="query" placeholder="Search">
+
             </form>
             <button class="notification-icon"><img src="images\images\notification-icon.svg" alt="notification-icon"></button>
         </div>
+
+        <!-- profile details -->
         <div class="profile">
             <button class="button-profile-pic"><img class="profile-picture" src="images\images\profile.png" alt="profile picture"></button>
             <p class="profile-name">John Doe</p>
